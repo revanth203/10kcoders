@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 700px; */
+            margin-top: 250px;
+            color: black;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            background-color: black;
+
+        }
+        .div {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:lavender;
+            border-radius: 25px;
+        } 
+        .div:hover{
+            transform: scale(1.5) rotate(4deg)translate(10px,10px);
+            color:lightblue;
+            background-image: linear-gradient( red ,green, yellow);
+            animation: gradient 2s ease linear;
+            border-top-left-radius: 20%;
+            border-bottom-right-radius: 20%;
+        }   
+    </style>
+</head>
+<body>
+    <div class="div"> Hover </div>
+</body>
+</html>
