@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar Hover Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      display: flex;
+      padding: 15px;
+    }
+
+    .nav-item {
+      position: relative;
+      margin-right: 30px;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .nav-item:hover {
+      background-color: #444;
+    }
+
+    .hover-box {
+      display: none;
+      position: absolute;
+      top: 45px;
+      left: 0;
+      background-color: #fff;
+      color: #000;
+      padding: 10px;
+      min-width: 200px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+
+    .nav-item:hover .hover-box {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="nav-item">
+      Home
+      <div class="hover-box">This is the Home page content.</div>
+    </div>
+
+    <div class="nav-item">
+      Services
+      <div class="hover-box">We offer Web Design, Development & Hosting.</div>
+    </div>
+
+    <div class="nav-item">
+      About
+      <div class="hover-box">Know more about our company and team here.</div>
+    </div>
+
+    <div class="nav-item">
+      Contact
+      <div class="hover-box">Reach out to us at contact@example.com</div>
+    </div>
+  </div>
+
+</body>
+</html>
