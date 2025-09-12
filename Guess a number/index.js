@@ -2,6 +2,7 @@ let random = Math.ceil(Math.random()*100);
 let input = document.getElementById("input");
 let para  =document.getElementById("para");
 let time = document.getElementById("time");
+let count =0;
 function guessBtn(){
     count++;
 
@@ -16,4 +17,5 @@ function guessBtn(){
        para.textContent="Your  Guessing is Too High." 
     }
      
+
 }
